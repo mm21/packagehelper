@@ -5,6 +5,7 @@ version = "0.1.0"
 description = "Helpers for working with packages"
 authors = ["mm21 <mm21.dev@gmail.com>"]
 readme = "README.md"
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.12"
