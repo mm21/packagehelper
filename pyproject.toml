@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "packagehelper"
+packages = [{include = "packagehelper"}]
+version = "0.1.0"
+description = "Helpers for working with packages"
+authors = ["mm21 <mm21.dev@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyrollup = "^0.1.0"
+pytest = "^8.2.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+
+[tool.black]
+line-length = 80
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib -s -v -rA"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
